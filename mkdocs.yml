@@ -4,21 +4,63 @@ nav:
   - Home: index.md
   - Research:
     - Multiplayer: Research/Multiplayer.md
+  - Installation: Installation.md
+  - Team: Team.md
 
 theme:
   name: material
+  icon:
+    logo: fontawesome/solid/laptop-code
+  features:
+    - navigation.tabs   # Navlinks are in the header and the left side shows the current page's headings
+    # - navigation.tabs.sticky  # Sticky navigation tabs
+    # - navigation.sections
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    # - navigation.bottom
+    # - navigation.expand
+    # - navigation.instant  # Dont Refresh if klick on local link
+    # - navigation.instant.progress
+    # - navigation.instant.prefetch # makes navigation.instant more stable
+    # - navigation.tracking
+    # - navigation.indexes
   palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+      primary: teal
+      accent: purple
 
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+      primary: teal
+      accent: purple
 
 extra_css:
   - ./css/style.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/Hinotori91/coderscape
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.progressbar
+  - codehilite
+  - pymdownx.superfences
+  - attr_list
